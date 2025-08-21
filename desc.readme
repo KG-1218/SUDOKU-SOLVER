@@ -1,0 +1,44 @@
+Sudoku Solver
+
+A simple and interactive Sudoku Solver built using HTML, CSS, and JavaScript.
+This project allows users to:
+
+✏️ Enter Sudoku numbers manually
+
+🧩 Automatically solve puzzles using a backtracking algorithm
+
+🎨 Enjoy a clean UI with hover & focus effects for cells
+
+🕹️ Interact with the grid like a real Sudoku board
+
+🚀 Features
+
+Sudoku solving with backtracking algorithm
+
+Interactive grid with hover & typing effects
+
+Clear and reset functionality
+
+Responsive design
+
+🛠️ Tech Stack
+
+HTML for structure
+
+CSS for styling
+
+JavaScript for logic & solving
+
+📸 Screenshot
+
+ ![Sudoku Solver](screenshot.png)
+
+🔮 Future Improvements
+
+Generate random Sudoku puzzles
+
+Add difficulty levels (Easy, Medium, Hard)
+
+Timer & scoring system
+
+Dark mode
