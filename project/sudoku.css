@@ -8,7 +8,7 @@ body {
     height: 100vh;
     background-color:RGB(255,192,203);
   }
-  
+
   .sudoku-container {
     text-align: center;
     background-color: #db68ab;
@@ -16,14 +16,14 @@ body {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
-  
+
   .sudoku-grid {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
-    gap: 2px;
     margin: 20px 0;
+    gap:0;
   }
-  
+
   .sudoku-cell {
     width: 40px;
     height: 40px;
@@ -32,7 +32,7 @@ body {
     font-size: 18px;
     background-color: #83c1e7;
   }
-  
+
   #solve-button {
     padding: 10px 20px;
     background-color: #007bff;
@@ -41,7 +41,7 @@ body {
     border-radius: 5px;
     cursor: pointer;
   }
-  
+
   #solve-button:hover {
     background-color: #0056b3;
   }
@@ -52,4 +52,40 @@ body {
   background-color: #0e7ec9; /* Even darker when typing (focused) */
   outline: none; /* Removes blue border */
   color: #fff;   /* White text for contrast */
+}
+.sudoku-cell {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  background-color: #83c1e7;
+  border: 1px solid #000; /* thin default border */
+}
+
+/* Thicker borders for 3x3 subgrids */
+.sudoku-cell:nth-child(3n) {
+  border-right: 3px solid #000; /* right border every 3rd cell */
+}
+
+.sudoku-cell:nth-child(n+19):nth-child(-n+27),
+.sudoku-cell:nth-child(n+46):nth-child(-n+54),
+.sudoku-cell:nth-child(n+73):nth-child(-n+81) {
+  border-bottom: 3px solid #000; /* bottom border every 3rd row */
+}
+
+.sudoku-cell:nth-child(1),
+.sudoku-cell:nth-child(10),
+.sudoku-cell:nth-child(19),
+.sudoku-cell:nth-child(28),
+.sudoku-cell:nth-child(37),
+.sudoku-cell:nth-child(46),
+.sudoku-cell:nth-child(55),
+.sudoku-cell:nth-child(64),
+.sudoku-cell:nth-child(73) {
+  border-left: 3px solid #000; /* left border for leftmost cells of 3x3 boxes */
+}
+
+.sudoku-cell:nth-child(-n+9) {
+  border-top: 3px solid #000; /* top border for first row of grid */
 }
