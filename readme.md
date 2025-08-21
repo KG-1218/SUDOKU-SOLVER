@@ -31,7 +31,7 @@ JavaScript for logic & solving
 
 📸 Screenshot
 
- ![Sudoku Solver](screenshot.png)
+ ![Sudoku Solver](Sudoku.png)
 
 🔮 Future Improvements
 
